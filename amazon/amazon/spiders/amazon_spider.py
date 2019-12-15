@@ -20,5 +20,5 @@ class AmazonSpiderSpider(scrapy.Spider):
         items["price"] = price
         items["imagelink"] = imagelink
         items["review"] = review
-
-        yield items["name"]
+        print (items["name"])
+        yield items
